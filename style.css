@@ -1,0 +1,128 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+
+    background: #333;
+
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 80px 1fr ;
+    grid-template-areas: "nav nav"
+                          "sidebar dashboard";
+   gap: 2px;
+   height: 100vh;
+}
+
+
+.navbar {
+    color: #fff;
+    background: #212121;
+    grid-area: nav;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.sidebar {
+   color: #fff;
+    background: #212121;
+    grid-area: sidebar;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+    padding-top: 10px;
+}
+
+
+
+.dashboard {
+    color: #fff;
+    background: #212121;
+    grid-area: dashboard;
+    padding: 10px;
+}
+
+.searchBox{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 10px;
+    flex: 1;
+}
+
+.searchBox input{
+
+    padding: 10px;
+    border-radius: 20px;
+    flex: 1;
+    max-width: 350px;
+    outline: none;
+    border: none;
+}
+
+.searchBox button{
+
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+}
+
+.log-in {
+        
+    padding: 8px 13px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.regi {
+
+    padding: 8px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
+.set{
+
+    margin-top: auto;
+    background: none;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side-item{
+
+    background: none;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
