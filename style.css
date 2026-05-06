@@ -8,18 +8,18 @@
 body {
 
     background: #333;
-
 }
 
 .container {
 
     display: grid;
     grid-template-columns: 1fr 8fr;
-    grid-template-rows: 80px 1fr ;
+    grid-template-rows: 80px 1fr;
     grid-template-areas: "nav nav"
-                          "sidebar dashboard";
-   gap: 2px;
-   height: 100vh;
+        "sidebar dashboard";
+    gap: 2px;
+    width: 100%;
+    height: 100vh;
 }
 
 
@@ -35,14 +35,14 @@ body {
 }
 
 .sidebar {
-   color: #fff;
+    color: #fff;
     background: #212121;
     grid-area: sidebar;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px; 
+    gap: 20px;
     padding-top: 10px;
 }
 
@@ -55,7 +55,7 @@ body {
     padding: 10px;
 }
 
-.searchBox{
+.searchBox {
 
     display: flex;
     justify-content: center;
@@ -65,7 +65,7 @@ body {
     flex: 1;
 }
 
-.searchBox input{
+.searchBox input {
 
     padding: 10px;
     border-radius: 20px;
@@ -75,7 +75,7 @@ body {
     border: none;
 }
 
-.searchBox button{
+.searchBox button {
 
     padding: 10px;
     border-radius: 20px;
@@ -85,22 +85,18 @@ body {
 
 }
 
-.log-in {
-        
+.btn {
+
     padding: 8px 13px;
     border-radius: 25px;
     cursor: pointer;
+    background-color: #fff;
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
 }
 
-.regi {
-
-    padding: 8px 15px;
-    border-radius: 25px;
-    cursor: pointer;
-
-}
-
-.set{
+.set {
 
     margin-top: auto;
     background: none;
@@ -108,12 +104,12 @@ body {
     outline: none;
     border: none;
     cursor: pointer;
-     display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.side-item{
+.side-item {
 
     background: none;
     color: #fff;
@@ -126,3 +122,125 @@ body {
 }
 
 
+.auth-wrapper {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-Container {
+
+    background: #fff;
+    color: #212121;
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    max-height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.auth {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.auth p {
+    font-weight: bold;
+    color: #333333c5;
+}
+
+.auth input {
+
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #333;
+}
+
+.auth button {
+
+    border-radius: 7px;
+    padding: 10px;
+    margin-top: 10px;
+    color: #fff;
+    background-color: rgba(0, 89, 255, 0.8);
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.Password-box {
+
+    position: relative;
+}
+
+.regi-wrapper {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.regi-container {
+
+    background: #fff;
+    max-width: 350px;
+    width: 90%;
+    height: 100%;
+    max-height: 500px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.auth-regi{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+
+}
+
+.auth-regi input{
+
+    border-radius: 7px;
+    padding: 10px;
+    margin-top: 10px;
+    max-width: 300px;
+    width: 100%;
+    border: 1px solid #333333b6;
+}
+
+.auth-regi button{
+
+     border-radius: 7px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: rgba(0, 89, 255, 0.8);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: medium;
+    font-weight: bold;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+input:focus {
+    border-color: #0059ff;
+    outline: none;
+}
