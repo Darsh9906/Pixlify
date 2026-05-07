@@ -46,7 +46,7 @@ body {
     padding-top: 10px;
 }
 
-.pix{
+.pix {
 
     cursor: pointer;
     color: #fff;
@@ -61,7 +61,9 @@ body {
     background: #212121;
     grid-area: dashboard;
     padding: 10px;
+    overflow-y: auto;
 }
+
 
 .searchBox {
 
@@ -81,6 +83,12 @@ body {
     max-width: 350px;
     outline: none;
     border: none;
+    background: #f1f1f1;
+
+}
+
+.searchBox input:focus{
+     box-shadow: 0 0 30px rgba(0, 76, 255, 0.4);
 }
 
 .searchBox button {
@@ -90,8 +98,15 @@ body {
     cursor: pointer;
     outline: none;
     border: none;
-
 }
+
+.btn:hover,
+.searchBox button:hover,
+.pics-btn:hover {
+
+    transform: scale(1.05);
+}
+
 
 .btn {
 
@@ -212,7 +227,7 @@ body {
     border-radius: 10px;
 }
 
-.auth-regi{
+.auth-regi {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -220,7 +235,7 @@ body {
 
 }
 
-.auth-regi input{
+.auth-regi input {
 
     border-radius: 7px;
     padding: 10px;
@@ -230,9 +245,9 @@ body {
     border: 1px solid #333333b6;
 }
 
-.auth-regi button{
+.auth-regi button {
 
-     border-radius: 7px;
+    border-radius: 7px;
     padding: 10px;
     margin-top: 10px;
     color: white;
@@ -244,7 +259,7 @@ body {
     font-weight: bold;
 }
 
-button:hover{
+button:hover {
     opacity: 0.9;
 }
 
@@ -253,8 +268,52 @@ input:focus {
     outline: none;
 }
 
-.pics-btn{
+.pics-btn {
     padding: 5px 10px;
-    margin: 10px 10px;
+    margin: 10px auto;
     border-radius: 20px;
+    cursor: pointer;
 }
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 20px;
+    max-width: auto;
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    margin-top: 20px;
+}
+
+.card {
+
+    padding: 10px;
+    background: #fff;
+    color: #212121;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img{
+
+    width: 100%;
+    height: 250px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.card-info{
+
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.card:hover{
+
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 89, 255, 0.8);
+}
+
