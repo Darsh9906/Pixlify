@@ -1,13 +1,18 @@
 
 lucide.createIcons();
 
+const searchInput = document.getElementById('search')
+const searchBtn = document.getElementById('searchBtn')
 const imageGrid = document.getElementById('imageGrid')
 
 const Access_Key = "KEv6T0R2L5Mkzsd5X-2fa9i4q4qqKkBqFaREaHwXyJ0";
 
+
+
+
 async function getImages() {
 
-    const response = await fetch("https://api.unsplash.com/photos/random?count=3",
+    const response = await fetch("https://api.unsplash.com/photos/random?count=1",
         {
             headers: {
                 Authorization: `Client-ID ${Access_Key}`
@@ -17,7 +22,6 @@ async function getImages() {
 
     const data = await response.json();
 
-    console.log(data);
     
 
     data.forEach(photo => {
@@ -39,7 +43,59 @@ async function getImages() {
         `;
 
         imageGrid.appendChild(card);
+        
     });
 }
 
-getImages();
+// getImages();
+
+
+
+searchBtn.addEventListener('click',function () {
+    
+    const query = searchInput.value;
+    
+    searchImage(query)
+    
+})
+
+async function searchImage(query){
+
+    const url = `https://api.unsplash.com/search/photos?query=${query}`;
+
+    const response = await fetch(url,
+        {
+            headers: {
+                Authorization: `Client-ID ${Access_Key}`
+            }
+        }
+    );
+    
+    const data = await response.json();
+
+    imageGrid.innerHTML = "";
+
+    data.results.forEach(photo => {
+
+         const card = document.createElement("div");
+
+        card.classList.add("card");
+
+        card.innerHTML = `
+
+        <img src="${photo.urls.regular}">
+
+        <div class="card-info">
+
+        <h3>${photo.alt_description}</h3>
+        <p>By ${photo.user.name}</p>
+
+        </div>
+        `;
+
+        imageGrid.appendChild(card);
+        
+        
+    })
+    
+}
