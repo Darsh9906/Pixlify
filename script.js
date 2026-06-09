@@ -186,3 +186,10 @@ function createCard(photo){
 
     imageGrid.appendChild(card);
 }
+
+searchInput.addEventListener('keydown',function(event){
+
+    if(event.key === "Enter"){
+        searchBtn.click();
+    }
+})
