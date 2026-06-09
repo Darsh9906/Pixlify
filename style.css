@@ -152,12 +152,12 @@ body {
 
 .side-item:hover{
     transform: translatey(-2px);
-    color: blue;
+    color: rgb(255, 136, 0);
 }
 
 .set:hover{
      transform: translatey(-2px);
-    color: #0059ff;
+    color: rgb(255, 136, 0);
 }
 
 .auth-wrapper {
