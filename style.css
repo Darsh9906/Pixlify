@@ -48,12 +48,17 @@ body {
 
 .pix {
 
-    cursor: pointer;
-    color: #fff;
-    text-decoration: none;
+    color: white;
     font-size: xx-large;
     font-weight: 800;
-    padding: 10px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.pix:hover{
+    color: #4d8dff;
+    text-shadow: 0 0 15px rgba(77,141,255,0.7);
 }
 
 .dashboard {
@@ -106,8 +111,13 @@ body {
     border: none;
 }
 
-.btn:hover,
-.searchBox button:hover,
+.searchBox button:hover{
+
+    transform: scale(1.05);
+    background: #4d8dff;
+    color: white;
+}
+
 .pics-btn:hover {
 
     transform: scale(1.05);
@@ -121,8 +131,18 @@ body {
     cursor: pointer;
     background-color: #fff;
     text-decoration: none;
-    color: #333;
+    color: #212121;
     display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+
+    background: #4d8dff;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(77,141,255,0.5);
+     border: 1px solid #4d8dff;
 }
 
 .set {
@@ -151,13 +171,13 @@ body {
 }
 
 .side-item:hover{
-    transform: translatey(-2px);
-    color: rgb(255, 136, 0);
+    color: #4d8dff;
+    transform: translateY(-3px);
 }
 
 .set:hover{
-     transform: translatey(-2px);
-    color: rgb(255, 136, 0);
+   color: #4d8dff;
+    transform: translateY(-3px);
 }
 
 .auth-wrapper {

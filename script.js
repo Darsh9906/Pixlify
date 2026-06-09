@@ -23,7 +23,7 @@ async function getImages() {
 
         imageGrid.innerHTML = "<h2>Loading...</h2>";
 
-    const response = await fetch("https://api.unsplash.com/photos/random?count=2",
+    const response = await fetch("https://api.unsplash.com/photos/random?count=20",
         {
             headers: {
                 Authorization: `Client-ID ${Access_Key}`
@@ -82,7 +82,7 @@ async function searchImage(query){
 try{
 
 
-    const url = `https://api.unsplash.com/search/photos?query=${query}&page=${page}&per_page=5`;
+    const url = `https://api.unsplash.com/search/photos?query=${query}&page=${page}&per_page=10`;
 
 
     const response = await fetch(url,
