@@ -50,14 +50,14 @@ body {
 
     color: white;
     font-size: xx-large;
-    font-weight: 800;
+    font-weight: 900;
     text-decoration: none;
     letter-spacing: 1px;
     transition: all 0.3s ease;
 }
 
 .pix:hover{
-    color: #4d8dff;
+    color: #3b82f6;
     text-shadow: 0 0 15px rgba(77,141,255,0.7);
 }
 
@@ -187,16 +187,17 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: black;
 }
 
 .login-Container {
 
-    background: #fff;
-    color: #212121;
+    background: #212121;
+    color: #fff;
     width: 100%;
     max-width: 350px;
     height: 100%;
-    max-height: 300px;
+    max-height: 330px;
     padding: 20px;
     border-radius: 10px;
 }
@@ -207,12 +208,12 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
+    color: #fff;
 }
 
 .auth p {
     font-weight: bold;
-    color: #333333c5;
+    color: #fff;
 }
 
 .auth input {
@@ -223,6 +224,8 @@ body {
     width: 100%;
     max-width: 300px;
     border: 1px solid #333;
+    background: #333;
+    color: #fff;
 }
 
 .auth button {
@@ -249,17 +252,19 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: black;
 }
 
 .regi-container {
 
-    background: #fff;
+    background: #212121;
     max-width: 350px;
     width: 90%;
     height: 100%;
-    max-height: 500px;
+    max-height: 530px;
     padding: 10px;
     border-radius: 10px;
+    color: #fff;
 }
 
 .auth-regi {
@@ -278,6 +283,8 @@ body {
     max-width: 300px;
     width: 100%;
     border: 1px solid #333333b6;
+    background: #333;
+    color: #fff;
 }
 
 .auth-regi button {
@@ -292,6 +299,16 @@ body {
     border: none;
     font-size: medium;
     font-weight: bold;
+}
+
+.switch-auth{
+    text-align:center;
+    color:#a1a1aa;
+}
+
+.switch-auth a{
+    color:#3b82f6;
+    text-decoration:none;
 }
 
 .moreBtn{
