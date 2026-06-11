@@ -21,7 +21,7 @@ GSAP
 ## 📷 Homepage
 
 <p align="center">
-  <img src="images/homepage.png" width="900">
+  <img src="images/Homepage.png" width="900">
 </p>
 
 🔑 API Setup
