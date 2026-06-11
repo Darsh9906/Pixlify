@@ -20,9 +20,7 @@ GSAP
 
 ## 📷 Homepage
 
-<p align="center">
-  <img src="images/Homepage.png" width="900">
-</p>
+![Pixlify Homepage](images/homepage.png)
 
 🔑 API Setup
 Create an account on the Unsplash Developer Portal.
