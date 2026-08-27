@@ -17,10 +17,7 @@ JavaScript (ES6)
 Unsplash API
 Lucide Icons
 GSAP
-
-## 📷 Homepage
-
-![Pixlify Homepage](images/homepage.png)
+ 
 
 🔑 API Setup
 Create an account on the Unsplash Developer Portal.
