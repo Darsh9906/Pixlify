@@ -35,14 +35,3 @@ Pixlify/
 ├── script.js
 └── README.md
 
-🎯 What I Learned
-
-Through this project I practiced:
-
-Working with REST APIs
-Fetch API and asynchronous JavaScript
-DOM Manipulation
-Event Handling
-Error Handling
-Responsive layouts
-Masonry image galleries
