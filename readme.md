@@ -20,7 +20,7 @@ GSAP
  
 
 🔑 API Setup
-Create an account on the Unsplash Developer Portal.
+Create an account on the Unsplash Developer Portal
 Generate an Access Key.
 Replace the key inside script.js:
 const Access_Key = "YOUR_ACCESS_KEY";
