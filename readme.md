@@ -16,7 +16,7 @@ CSS3
 JavaScript (ES6)
 Unsplash API
 Lucide Icons
-GSAP.
+GSAP
  
 
 🔑 API Setup
