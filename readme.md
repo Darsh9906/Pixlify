@@ -1,4 +1,4 @@
-A modern photo gallery web application built with HTML, CSS, and JavaScript using the Unsplash API.
+A modern photo gallery web application built with HTML, CSS, and JavaScript using the Unsplash API:
 
 🚀 Features
 Search images by keyword
